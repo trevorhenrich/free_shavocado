@@ -1,12 +1,12 @@
 import express from 'express';
 import cors from 'cors';
-import postRoutes from './routes/posts.js';
+import tweetRoutes from './routes/tweets.js';
 
 const app = express();
-app.use('/hello', postRoutes);
+app.use('/tweets', tweetRoutes);
 
 
-const allowedOrigins = ['http://localhost:3000/hello'];
+const allowedOrigins = ['http://localhost:3000/'];
 const options = {
   origin: allowedOrigins
 };
